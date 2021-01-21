@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/plettie/CLionProjects/untitled
+CMAKE_SOURCE_DIR = /Users/out-pankratova4-av/Desktop/dr_quine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/plettie/CLionProjects/untitled/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled.dir/depend.make
@@ -79,28 +79,43 @@ include CMakeFiles/untitled.dir/flags.make
 
 CMakeFiles/untitled.dir/Colleen.c.o: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Colleen.c.o: ../Colleen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/plettie/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled.dir/Colleen.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/Colleen.c.o   -c /Users/plettie/CLionProjects/untitled/Colleen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled.dir/Colleen.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/Colleen.c.o   -c /Users/out-pankratova4-av/Desktop/dr_quine/Colleen.c
 
 CMakeFiles/untitled.dir/Colleen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled.dir/Colleen.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/plettie/CLionProjects/untitled/Colleen.c > CMakeFiles/untitled.dir/Colleen.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/out-pankratova4-av/Desktop/dr_quine/Colleen.c > CMakeFiles/untitled.dir/Colleen.c.i
 
 CMakeFiles/untitled.dir/Colleen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled.dir/Colleen.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/plettie/CLionProjects/untitled/Colleen.c -o CMakeFiles/untitled.dir/Colleen.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/out-pankratova4-av/Desktop/dr_quine/Colleen.c -o CMakeFiles/untitled.dir/Colleen.c.s
+
+CMakeFiles/untitled.dir/Grace.c.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Grace.c.o: ../Grace.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled.dir/Grace.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/Grace.c.o   -c /Users/out-pankratova4-av/Desktop/dr_quine/Grace.c
+
+CMakeFiles/untitled.dir/Grace.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled.dir/Grace.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/out-pankratova4-av/Desktop/dr_quine/Grace.c > CMakeFiles/untitled.dir/Grace.c.i
+
+CMakeFiles/untitled.dir/Grace.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled.dir/Grace.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/out-pankratova4-av/Desktop/dr_quine/Grace.c -o CMakeFiles/untitled.dir/Grace.c.s
 
 # Object files for target untitled
 untitled_OBJECTS = \
-"CMakeFiles/untitled.dir/Colleen.c.o"
+"CMakeFiles/untitled.dir/Colleen.c.o" \
+"CMakeFiles/untitled.dir/Grace.c.o"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
 
 untitled: CMakeFiles/untitled.dir/Colleen.c.o
+untitled: CMakeFiles/untitled.dir/Grace.c.o
 untitled: CMakeFiles/untitled.dir/build.make
 untitled: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/plettie/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable untitled"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable untitled"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -113,6 +128,6 @@ CMakeFiles/untitled.dir/clean:
 .PHONY : CMakeFiles/untitled.dir/clean
 
 CMakeFiles/untitled.dir/depend:
-	cd /Users/plettie/CLionProjects/untitled/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/plettie/CLionProjects/untitled /Users/plettie/CLionProjects/untitled /Users/plettie/CLionProjects/untitled/cmake-build-debug /Users/plettie/CLionProjects/untitled/cmake-build-debug /Users/plettie/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/out-pankratova4-av/Desktop/dr_quine /Users/out-pankratova4-av/Desktop/dr_quine /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles/untitled.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/untitled.dir/depend
 

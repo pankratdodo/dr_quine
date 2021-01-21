@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/plettie/CLionProjects/untitled
+CMAKE_SOURCE_DIR = /Users/out-pankratova4-av/Desktop/dr_quine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/plettie/CLionProjects/untitled/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plettie/CLionProjects/untitled/cmake-build-debug/CMakeFiles /Users/plettie/CLionProjects/untitled/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plettie/CLionProjects/untitled/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -170,6 +170,33 @@ Colleen.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Colleen.c.s
 .PHONY : Colleen.c.s
 
+Grace.o: Grace.c.o
+
+.PHONY : Grace.o
+
+# target to build an object file
+Grace.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Grace.c.o
+.PHONY : Grace.c.o
+
+Grace.i: Grace.c.i
+
+.PHONY : Grace.i
+
+# target to preprocess a source file
+Grace.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Grace.c.i
+.PHONY : Grace.c.i
+
+Grace.s: Grace.c.s
+
+.PHONY : Grace.s
+
+# target to generate assembly for a file
+Grace.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Grace.c.s
+.PHONY : Grace.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... Colleen.o"
 	@echo "... Colleen.i"
 	@echo "... Colleen.s"
+	@echo "... Grace.o"
+	@echo "... Grace.i"
+	@echo "... Grace.s"
 .PHONY : help
 
 
