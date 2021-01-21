@@ -1,6 +1,9 @@
 #include <stdio.h>
-#define COMM "comment"
-#define STR "#include <stdio.h>%c#define COMM %ccomment%c%c#define STR %c%s%c%c#define RUN int main(){FILE *fd; fd = fopen(%cGrace_kid.c%c, %cw%c); fprintf(fd, STR, 10, 34, 34, 10, 34, STR, 34, 10, 34, 34, 34, 34, 10, 10, 10);}%c%cRUN%c"
-#define RUN int main(){FILE *fd; fd = fopen("Grace_kid.c", "w"); fprintf(fd, STR, 10, 34, 34, 10, 34, STR, 34, 10, 34, 34, 34, 34, 10, 10, 10);}
+/**
+ * Comment
+ */
+#define FILE_NAME "Grace_kid.c"
+#define STR "#include <stdio.h>%c/**%c * Comment%c */%c#define FILE_NAME %cGrace_kid.c%c%c#define STR %c%s%c%c#define FN int main(){FILE *fd; fd = fopen(FILE_NAME, %cw%c); fprintf(fd, STR, 10, 10, 10, 10, 34, 34, 10, 34, STR, 34, 10, 34, 34, 10, 10, 10); fclose(fd);}%c%cFN%c"
+#define FN int main(){FILE *fd; fd = fopen(FILE_NAME, "w"); fprintf(fd, STR, 10, 10, 10, 10, 34, 34, 10, 34, STR, 34, 10, 34, 34, 10, 10, 10); fclose(fd);}
 
-RUN
+FN

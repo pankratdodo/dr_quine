@@ -197,6 +197,33 @@ Grace.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Grace.c.s
 .PHONY : Grace.c.s
 
+Sully.o: Sully.c.o
+
+.PHONY : Sully.o
+
+# target to build an object file
+Sully.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sully.c.o
+.PHONY : Sully.c.o
+
+Sully.i: Sully.c.i
+
+.PHONY : Sully.i
+
+# target to preprocess a source file
+Sully.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sully.c.i
+.PHONY : Sully.c.i
+
+Sully.s: Sully.c.s
+
+.PHONY : Sully.s
+
+# target to generate assembly for a file
+Sully.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sully.c.s
+.PHONY : Sully.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +239,9 @@ help:
 	@echo "... Grace.o"
 	@echo "... Grace.i"
 	@echo "... Grace.s"
+	@echo "... Sully.o"
+	@echo "... Sully.i"
+	@echo "... Sully.s"
 .PHONY : help
 
 

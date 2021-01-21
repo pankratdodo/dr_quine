@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/untitled.dir/Colleen.c.o CMakeFiles/untitled.dir/Grace.c.o  -o untitled 
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/untitled.dir/Colleen.c.o CMakeFiles/untitled.dir/Grace.c.o CMakeFiles/untitled.dir/Sully.c.o  -o untitled 

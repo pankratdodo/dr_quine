@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/out-pankratova4-av/Desktop/dr_quine/Colleen.c" "/Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles/untitled.dir/Colleen.c.o"
   "/Users/out-pankratova4-av/Desktop/dr_quine/Grace.c" "/Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles/untitled.dir/Grace.c.o"
+  "/Users/out-pankratova4-av/Desktop/dr_quine/Sully.c" "/Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles/untitled.dir/Sully.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
