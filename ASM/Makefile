@@ -2,29 +2,34 @@ COLLEEN = Colleen
 GRACE = Grace
 SULLY = Sully
 COLLEEN_SOURCE = $(COLLEEN).s
-# GRACE_SOURCE = $(GRACE).s
-# SULLY_SOURCE = $(SULLY).s
+GRACE_SOURCE = $(GRACE).s
+SULLY_SOURCE = $(SULLY).s
 COLLEEN_O = $(COLLEEN_SOURCE:.s=.o)
-CC = nasm
-LD = gcc
-CCFLAGS = -f macho64
-LDFLAGS = -m64 -lc 2>&-
+GRACE_O = $(GRACE_SOURCE:.s=.o)
+SULLY_O = $(SULLY_SOURCE:.s=.o)
+NASM = nasm
+CC = gcc
+NASMFLAGS = -f macho64
+CCFLAGS = -m64 -lc
 
-all: $(COLLEEN)  #$(GRACE) $(SULLY)
+all: $(COLLEEN) $(GRACE) #$(SULLY)
+
 $(COLLEEN_O): $(COLLEEN_SOURCE)
-	@$(CC) $(CCFLAGS) $(COLLEEN_SOURCE)
+	@$(NASM) $(NASMFLAGS) $(COLLEEN_SOURCE)
+
+$(GRACE_O): $(GRACE_SOURCE)
+	@$(NASM) $(NASMFLAGS) $(GRACE_SOURCE)
 
 $(COLLEEN): $(COLLEEN_O)
-	@$(LD) $(LDFLAGS) $(COLLEEN_O) -o $(COLLEEN)
-# $(GRACE):
-# 	@$(CC) $(CCFLAGS) $(GRACE_SOURCE) -o $(GRACE_SOURCE:.s=.o)
-# 	@$(LD) $(LDFLAGS) $(GRACE_SOURCE:.s=.o) -o $(GRACE)
+	@$(CC) $(CCFLAGS) $(COLLEEN_O) -o $(COLLEEN)
+$(GRACE): $(GRACE_O)
+	@$(CC) $(CCFLAGS) $(GRACE_O) -o $(GRACE)
 # $(SULLY):
-# 	@$(CC) $(CCFLAGS) $(SULLY_SOURCE) -o $(SULLY_SOURCE:.s=.o)
-# 	@$(LD) $(LDFLAGS) $(SULLY_SOURCE:.s=.o) -o $(SULLY)
+# 	@$(NASM) $(NASMFLAGS) $(SULLY_SOURCE) -o $(SULLY_SOURCE:.s=.o)
+# 	@$(CC) $(CCFLAGS) $(SULLY_SOURCE:.s=.o) -o $(SULLY)
 
 clean:
-	rm -f $(COLLEEN_SOURCE:.s=.o) $(GRACE_SOURCE:.s=.o) $(SULLY_SOURCE:.s=.o) Colleen_tmp
+	rm -f $(COLLEEN_O) $(GRACE_O) $(SULLY_O) Colleen_tmp Grace_kid.s
 fclean: clean
 	rm -f $(COLLEEN) $(GRACE) $(SULLY)
 re: fclean all
