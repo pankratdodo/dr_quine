@@ -3,4 +3,4 @@ project(untitled C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(untitled Colleen.c Grace.c Sully.c)
+add_executable(untitled C/Colleen.c C/Grace.c C/Sully.c)
