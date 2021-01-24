@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/out-pankratova4-av/Desktop/dr_quine
+CMAKE_SOURCE_DIR = /Users/plettie/CLionProjects/dr_quine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/plettie/CLionProjects/dr_quine/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plettie/CLionProjects/dr_quine/cmake-build-debug/CMakeFiles /Users/plettie/CLionProjects/dr_quine/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/plettie/CLionProjects/dr_quine/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,86 +143,86 @@ untitled/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
 .PHONY : untitled/fast
 
-Colleen.o: Colleen.c.o
+C/Colleen.o: C/Colleen.c.o
 
-.PHONY : Colleen.o
-
-# target to build an object file
-Colleen.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Colleen.c.o
-.PHONY : Colleen.c.o
-
-Colleen.i: Colleen.c.i
-
-.PHONY : Colleen.i
-
-# target to preprocess a source file
-Colleen.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Colleen.c.i
-.PHONY : Colleen.c.i
-
-Colleen.s: Colleen.c.s
-
-.PHONY : Colleen.s
-
-# target to generate assembly for a file
-Colleen.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Colleen.c.s
-.PHONY : Colleen.c.s
-
-Grace.o: Grace.c.o
-
-.PHONY : Grace.o
+.PHONY : C/Colleen.o
 
 # target to build an object file
-Grace.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Grace.c.o
-.PHONY : Grace.c.o
+C/Colleen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/C/Colleen.c.o
+.PHONY : C/Colleen.c.o
 
-Grace.i: Grace.c.i
+C/Colleen.i: C/Colleen.c.i
 
-.PHONY : Grace.i
+.PHONY : C/Colleen.i
 
 # target to preprocess a source file
-Grace.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Grace.c.i
-.PHONY : Grace.c.i
+C/Colleen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/C/Colleen.c.i
+.PHONY : C/Colleen.c.i
 
-Grace.s: Grace.c.s
+C/Colleen.s: C/Colleen.c.s
 
-.PHONY : Grace.s
+.PHONY : C/Colleen.s
 
 # target to generate assembly for a file
-Grace.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Grace.c.s
-.PHONY : Grace.c.s
+C/Colleen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/C/Colleen.c.s
+.PHONY : C/Colleen.c.s
 
-Sully.o: Sully.c.o
+C/Grace.o: C/Grace.c.o
 
-.PHONY : Sully.o
+.PHONY : C/Grace.o
 
 # target to build an object file
-Sully.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sully.c.o
-.PHONY : Sully.c.o
+C/Grace.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/C/Grace.c.o
+.PHONY : C/Grace.c.o
 
-Sully.i: Sully.c.i
+C/Grace.i: C/Grace.c.i
 
-.PHONY : Sully.i
+.PHONY : C/Grace.i
 
 # target to preprocess a source file
-Sully.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sully.c.i
-.PHONY : Sully.c.i
+C/Grace.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/C/Grace.c.i
+.PHONY : C/Grace.c.i
 
-Sully.s: Sully.c.s
+C/Grace.s: C/Grace.c.s
 
-.PHONY : Sully.s
+.PHONY : C/Grace.s
 
 # target to generate assembly for a file
-Sully.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Sully.c.s
-.PHONY : Sully.c.s
+C/Grace.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/C/Grace.c.s
+.PHONY : C/Grace.c.s
+
+C/Sully.o: C/Sully.c.o
+
+.PHONY : C/Sully.o
+
+# target to build an object file
+C/Sully.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/C/Sully.c.o
+.PHONY : C/Sully.c.o
+
+C/Sully.i: C/Sully.c.i
+
+.PHONY : C/Sully.i
+
+# target to preprocess a source file
+C/Sully.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/C/Sully.c.i
+.PHONY : C/Sully.c.i
+
+C/Sully.s: C/Sully.c.s
+
+.PHONY : C/Sully.s
+
+# target to generate assembly for a file
+C/Sully.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/C/Sully.c.s
+.PHONY : C/Sully.c.s
 
 # Help Target
 help:
@@ -233,15 +233,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled"
-	@echo "... Colleen.o"
-	@echo "... Colleen.i"
-	@echo "... Colleen.s"
-	@echo "... Grace.o"
-	@echo "... Grace.i"
-	@echo "... Grace.s"
-	@echo "... Sully.o"
-	@echo "... Sully.i"
-	@echo "... Sully.s"
+	@echo "... C/Colleen.o"
+	@echo "... C/Colleen.i"
+	@echo "... C/Colleen.s"
+	@echo "... C/Grace.o"
+	@echo "... C/Grace.i"
+	@echo "... C/Grace.s"
+	@echo "... C/Sully.o"
+	@echo "... C/Sully.i"
+	@echo "... C/Sully.s"
 .PHONY : help
 
 
