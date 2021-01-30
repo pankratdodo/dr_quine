@@ -26,11 +26,11 @@ $(COLLEEN): $(COLLEEN_O)
 	@$(CC) $(CCFLAGS) $(COLLEEN_O) -o $(COLLEEN)
 $(GRACE): $(GRACE_O)
 	@$(CC) $(CCFLAGS) $(GRACE_O) -o $(GRACE)
- $(SULLY): $(SULLY_O)
- 	@$(CC) $(CCFLAGS) $(SULLY_O) -o $(SULLY)
+$(SULLY): $(SULLY_O)
+	@$(CC) $(CCFLAGS) $(SULLY_O) -o $(SULLY)
 
 clean:
-	rm -f $(COLLEEN_O) $(GRACE_O) $(SULLY_O) Colleen_tmp Grace_kid.s
+	rm -f $(COLLEEN_O) $(GRACE_O) $(SULLY_O) Colleen_tmp Grace_kid.s Sully_*.o
 fclean: clean
-	rm -f $(COLLEEN) $(GRACE) $(SULLY)
+	rm -f $(COLLEEN) $(GRACE) $(SULLY) Sully_*
 re: fclean all
