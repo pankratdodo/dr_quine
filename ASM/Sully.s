@@ -2,15 +2,14 @@ global _main
 extern _sprintf
 extern _fprintf
 extern _access
-extern _fopen
+extern _open
 extern _system
-extern _printf
+extern _dprintf
 section .data
-str: db "global _main%1$cextern _sprintf%1$cextern _fprintf%1$cextern _access%1$cextern _fopen%1$cextern _system%1$cextern _printf%1$csection .data%1$cstr: db %2$c%3$s%2$c, 0%1$cname: db %2$cSully_%4$cd.s%2$c, 0%1$crun: db %2$cnasm -f macho64 %4$cs && gcc -m64 -lc Sully_%4$cd.o -o Sully_%4$cd && ./Sully_%4$cd%2$c, 0%1$coption: db %2$cw%2$c, 0%1$cbuff: db %2$cSully_X.s%2$c, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0%1$cproc: db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0%1$csection .text%1$c_main:%1$cpush rbx%1$cmov r9, %5$d%1$ccmp r9, 0%1$cjle end%1$cmov r12, r9%1$cmov rdi, buff%1$cmov rsi, name%1$cmov rdx, r12%1$ccall _sprintf%1$cmov rdi, buff%1$cmov rsi, 0%1$ccall _access%1$ccmp rax, -1%1$cjne end%1$clea r12, [r12 - 1]%1$cmov rdi, buff%1$cmov rsi, name%1$cmov rdx, r12%1$ccall _sprintf%1$cmov rdi, buff%1$cmov rsi, option%1$ccall _fopen%1$cmov rdi, rax%1$cmov rsi, str%1$cmov rdx, 10%1$cmov rcx, 34%1$cmov r8, str%1$cmov r9, 37%1$ccall _fprintf%1$cmov rdi, proc%1$cmov rsi, run%1$cmov rdx, buff%1$cmov rcx, r12%1$cmov r8, r12%1$cmov r9, r12%1$ccall _sprintf%1$cmov rdi, proc%1$ccall _system%1$cpop rdx%1$cret%1$cend:%1$cmov rax, 0%1$cpop rbx%1$cret%1$c", 0
+str: db "global _main%2$cextern _sprintf%2$cextern _fprintf%2$cextern _access%2$cextern _open%2$cextern _system%2$cextern _dprintf%2$csection .data%2$cstr: db %3$c%1$s%3$c, 0%2$cname: db %3$cSully_%%d.s%3$c, 0%2$crun: db %3$cnasm -f macho64 %%s -o cj.o && gcc -m64 -lc -o cj cj.o 2>&- && ./cj && rm -f cj cj.o%3$c, 0%2$cbuff: db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0%2$cproc: db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0%2$csection .text%2$c_main:%2$cpush rbx%2$cmov r9, %4$d%2$ccmp r9, 0%2$cjle end%2$cmov rcx, r9%2$ccall check%2$cmov rcx, rax%2$cmov r12, rax%2$ccall open%2$cmov rdi, rax%2$cmov r9, r12%2$ccall write%2$ccall child%2$cend:%2$cpop rax%2$cret%2$ccheck:%2$cpush rbx%2$cmov r12, rcx%2$ccall make%2$cmov rdi, buff%2$cmov rsi, 0%2$ccall _access%2$cjne end_check%2$cadd r12, 1%2$cend_check:%2$cpop rbx%2$cdec r12%2$cmov rax, r12%2$cret%2$cmake:%2$cpush rbx%2$cmov rdi, buff%2$cmov rsi, name%2$cmov rdx, rcx%2$ccall _sprintf%2$cpop rbx%2$cret%2$copen:%2$cpush rbx%2$ccall make%2$cmov rdi, buff%2$cmov rsi, 0x601%2$cmov rdx, 0x1a4%2$ccall _open%2$cpop rbx%2$cret%2$cwrite:%2$cpush rbx%2$cmov rsi, str%2$cmov rdx, str%2$cmov rcx, 10%2$cmov r8, 34%2$ccall _dprintf%2$cpop rbx%2$cret%2$cchild:%2$cpush rbx%2$cmov rdi, proc%2$cmov rsi, run%2$cmov rdx, buff%2$ccall _sprintf%2$cmov rdi, proc%2$ccall _system%2$cpop rbx%2$cret%2$c", 0
 name: db "Sully_%d.s", 0
-run: db "nasm -f macho64 %s && gcc -m64 -lc Sully_%d.o -o Sully_%d && ./Sully_%d", 0
-option: db "w", 0
-buff: db "Sully_X.s", 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+run: db "nasm -f macho64 %s -o cj.o && gcc -m64 -lc -o cj cj.o 2>&- && ./cj && rm -f cj cj.o", 0
+buff: db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 proc: db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 section .text
 _main:
@@ -18,44 +17,65 @@ push rbx
 mov r9, 5
 cmp r9, 0
 jle end
-mov r12, r9
-mov rdi, buff
-mov rsi, name
-mov rdx, r12
-call _sprintf
+mov rcx, r9
+call check
+mov rcx, rax
+mov r12, rax
+call open
+mov rdi, rax
+mov r9, r12
+call write
+call child
+end:
+pop rax
+ret
+check:
+push rbx
+mov r12, rcx
+call make
 mov rdi, buff
 mov rsi, 0
 call _access
-cmp rax, -1
-jne end
-lea r12, [r12 - 1]
+jne end_check
+add r12, 1
+end_check:
+pop rbx
+dec r12
+mov rax, r12
+ret
+make:
+push rbx
 mov rdi, buff
 mov rsi, name
-mov rdx, r12
+mov rdx, rcx
 call _sprintf
+pop rbx
+ret
+open:
+push rbx
+call make
 mov rdi, buff
-mov rsi, option
-call _fopen
-mov rdi, rax
+mov rsi, 0x601
+mov rdx, 0x1a4
+call _open
+pop rbx
+ret
+write:
+push rbx
 mov rsi, str
-mov rdx, 10
-mov rcx, 34
-mov r8, str
-mov r9, 37
-mov r10, r12
-call _fprintf
+mov rdx, str
+mov rcx, 10
+mov r8, 34
+call _dprintf
+pop rbx
+ret
+child:
+push rbx
 mov rdi, proc
 mov rsi, run
 mov rdx, buff
-mov rcx, r12
-mov r8, r12
-mov r9, r12
 call _sprintf
 mov rdi, proc
 call _system
-pop rdx
-ret
-end:
-mov rax, 0
 pop rbx
 ret

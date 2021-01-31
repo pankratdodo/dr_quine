@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/plettie/CLionProjects/dr_quine
+CMAKE_SOURCE_DIR = /Users/plettie/dr_quine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/plettie/CLionProjects/dr_quine/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/plettie/dr_quine/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled.dir/depend.make
@@ -79,42 +79,42 @@ include CMakeFiles/untitled.dir/flags.make
 
 CMakeFiles/untitled.dir/C/Colleen.c.o: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/C/Colleen.c.o: ../C/Colleen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/plettie/CLionProjects/dr_quine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled.dir/C/Colleen.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/C/Colleen.c.o   -c /Users/plettie/CLionProjects/dr_quine/C/Colleen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/plettie/dr_quine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled.dir/C/Colleen.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/C/Colleen.c.o   -c /Users/plettie/dr_quine/C/Colleen.c
 
 CMakeFiles/untitled.dir/C/Colleen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled.dir/C/Colleen.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/plettie/CLionProjects/dr_quine/C/Colleen.c > CMakeFiles/untitled.dir/C/Colleen.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/plettie/dr_quine/C/Colleen.c > CMakeFiles/untitled.dir/C/Colleen.c.i
 
 CMakeFiles/untitled.dir/C/Colleen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled.dir/C/Colleen.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/plettie/CLionProjects/dr_quine/C/Colleen.c -o CMakeFiles/untitled.dir/C/Colleen.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/plettie/dr_quine/C/Colleen.c -o CMakeFiles/untitled.dir/C/Colleen.c.s
 
 CMakeFiles/untitled.dir/C/Grace.c.o: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/C/Grace.c.o: ../C/Grace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/plettie/CLionProjects/dr_quine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled.dir/C/Grace.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/C/Grace.c.o   -c /Users/plettie/CLionProjects/dr_quine/C/Grace.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/plettie/dr_quine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled.dir/C/Grace.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/C/Grace.c.o   -c /Users/plettie/dr_quine/C/Grace.c
 
 CMakeFiles/untitled.dir/C/Grace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled.dir/C/Grace.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/plettie/CLionProjects/dr_quine/C/Grace.c > CMakeFiles/untitled.dir/C/Grace.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/plettie/dr_quine/C/Grace.c > CMakeFiles/untitled.dir/C/Grace.c.i
 
 CMakeFiles/untitled.dir/C/Grace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled.dir/C/Grace.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/plettie/CLionProjects/dr_quine/C/Grace.c -o CMakeFiles/untitled.dir/C/Grace.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/plettie/dr_quine/C/Grace.c -o CMakeFiles/untitled.dir/C/Grace.c.s
 
 CMakeFiles/untitled.dir/C/Sully.c.o: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/C/Sully.c.o: ../C/Sully.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/plettie/CLionProjects/dr_quine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/untitled.dir/C/Sully.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/C/Sully.c.o   -c /Users/plettie/CLionProjects/dr_quine/C/Sully.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/plettie/dr_quine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/untitled.dir/C/Sully.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/C/Sully.c.o   -c /Users/plettie/dr_quine/C/Sully.c
 
 CMakeFiles/untitled.dir/C/Sully.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled.dir/C/Sully.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/plettie/CLionProjects/dr_quine/C/Sully.c > CMakeFiles/untitled.dir/C/Sully.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/plettie/dr_quine/C/Sully.c > CMakeFiles/untitled.dir/C/Sully.c.i
 
 CMakeFiles/untitled.dir/C/Sully.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled.dir/C/Sully.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/plettie/CLionProjects/dr_quine/C/Sully.c -o CMakeFiles/untitled.dir/C/Sully.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/plettie/dr_quine/C/Sully.c -o CMakeFiles/untitled.dir/C/Sully.c.s
 
 # Object files for target untitled
 untitled_OBJECTS = \
@@ -130,7 +130,7 @@ untitled: CMakeFiles/untitled.dir/C/Grace.c.o
 untitled: CMakeFiles/untitled.dir/C/Sully.c.o
 untitled: CMakeFiles/untitled.dir/build.make
 untitled: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/plettie/CLionProjects/dr_quine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable untitled"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/plettie/dr_quine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable untitled"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -143,6 +143,6 @@ CMakeFiles/untitled.dir/clean:
 .PHONY : CMakeFiles/untitled.dir/clean
 
 CMakeFiles/untitled.dir/depend:
-	cd /Users/plettie/CLionProjects/dr_quine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/plettie/CLionProjects/dr_quine /Users/plettie/CLionProjects/dr_quine /Users/plettie/CLionProjects/dr_quine/cmake-build-debug /Users/plettie/CLionProjects/dr_quine/cmake-build-debug /Users/plettie/CLionProjects/dr_quine/cmake-build-debug/CMakeFiles/untitled.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/plettie/dr_quine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/plettie/dr_quine /Users/plettie/dr_quine /Users/plettie/dr_quine/cmake-build-debug /Users/plettie/dr_quine/cmake-build-debug /Users/plettie/dr_quine/cmake-build-debug/CMakeFiles/untitled.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/untitled.dir/depend
 
