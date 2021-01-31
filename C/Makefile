@@ -13,13 +13,13 @@ CCFLAGS = -Wall -Wextra -Werror
 
 all: $(COLLEEN) $(GRACE) $(SULLY)
 
-$(COLLEEN):
+$(COLLEEN): $(COLLEEN_O)
 	@$(CG) $(LDFLAGS) $(COLLEEN_SOURCE) -o $(COLLEEN)
 
-$(GRACE):
+$(GRACE): $(GRACE_O)
 	@$(CG) $(LDFLAGS) $(GRACE_SOURCE) -o $(GRACE)
 
-$(SULLY):
+$(SULLY): $(SULLY_O)
 	@$(CG) $(LDFLAGS) $(SULLY_SOURCE) -o $(SULLY)
 
 clean:
