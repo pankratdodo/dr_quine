@@ -10,7 +10,7 @@ SULLY_O = $(SULLY_SOURCE:.s=.o)
 NASM = nasm
 CC = gcc
 NASMFLAGS = -f macho64
-CCFLAGS = -m64 -lc
+CCFLAGS = -m64 -lc 2>&-
 
 all: $(COLLEEN) $(GRACE) $(SULLY)
 

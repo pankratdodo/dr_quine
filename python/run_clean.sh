@@ -1,0 +1,1 @@
+rm -rf tmp_Colleen Grace_kid.py Sully_*
