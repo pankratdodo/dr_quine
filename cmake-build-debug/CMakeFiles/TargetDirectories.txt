@@ -1,3 +1,0 @@
-/Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/out-pankratova4-av/Desktop/dr_quine/cmake-build-debug/CMakeFiles/untitled.dir
