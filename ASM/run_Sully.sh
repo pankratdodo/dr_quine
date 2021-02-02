@@ -1,12 +1,12 @@
 ./Sully;
-diff Sully.c Sully_0.c;
+diff Sully.s Sully_0.s;
 echo "--------------------------------"
-diff Sully.c Sully_1.c;
+diff Sully.s Sully_1.s;
 echo "--------------------------------"
-diff Sully.c Sully_2.c;
+diff Sully.s Sully_2.s;
 echo "--------------------------------"
-diff Sully.c Sully_3.c;
+diff Sully.s Sully_3.s;
 echo "--------------------------------"
-diff Sully.c Sully_4.c;
+diff Sully.s Sully_4.s;
 echo "--------------------------------"
-diff Sully_1.c Sully_5.c;
+diff Sully_1.s Sully_5.s;
